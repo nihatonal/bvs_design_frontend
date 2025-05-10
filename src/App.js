@@ -1,21 +1,20 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import ProjectPage from './pages/ProjectPage';
 
+import './App.css'
 function App() {
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-blue-600">{t('welcome')}</h1>
-      <p>{t('description')}</p>
-      <button onClick={() => changeLanguage('tr')}>Türkçe</button>
-      <button onClick={() => changeLanguage('en')}>English</button>
-      <button onClick={() => changeLanguage('ru')}>Русский</button>
-    </div>
+    <Router>
+      <div className="min-h-screen bg-gray-100 text-gray-900">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/project/:id" element={<ProjectPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

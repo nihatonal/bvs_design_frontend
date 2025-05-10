@@ -1,5 +1,89 @@
 {
-    "welcome": "Hoş geldiniz",
-    "description": "Bu çok dilli bir web uygulamasıdır."
+  "hero": {
+    "title": {
+      "part1": "Fikirleri ",
+      "part2": "dijital",
+      "part3": "gerçekliklere dönüştürüyoruz"
+    },
+    "description": "Dijital dünyada öne çıkmak isteyen işletmeler ve bireyler için özel olarak hazırlanmış profesyonel web geliştirme ve tasarım hizmetleri.",
+    "cta_1": "Projelerime Göz At",
+    "cta_2": "Benimle İletişime Geç",
+    "scroll": "Kaydır"
+  },
+  "nav": {
+    "home": "Anasayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "pricing": "Fiyatlandırma",
+    "portfolio": "Portföy",
+    "contact": "İletişim"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "subtitle": "Nihat Önal - Web Geliştirici",
+    "role": "Web Geliştirici & Tasarımcı",
+    "paragraph1": "6 yılı aşkın web geliştirme deneyimimle, işletmelerin çevrimiçi varlıklarını büyütmelerine yardımcı olan güzel, işlevsel ve duyarlı web siteleri oluşturma konusunda uzmanım.",
+    "paragraph2": "Yaklaşımım, teknik uzmanlık ile yaratıcı tasarımı birleştirerek sadece harika görünen değil, aynı zamanda olağanüstü performans gösteren web siteleri sunmaktır. Temiz kod, kullanıcı deneyimi ve müşterilerimin dijital hedeflerine ulaşmalarına yardımcı olma konusunda tutkuluyum.",
+    "statistics": {
+      "experience": "Yıllık Deneyim",
+      "projects": "Tamamlanan Proje",
+      "clients": "Memnuniyet Oranı %"
+    }
+  },
+  "services": {
+    "title": "Hizmetler",
+    "subtitle": "Sizin için neler yapabilirim",
+    "webDev": "Web Geliştirme",
+    "webDevDesc": "React JS ve modern teknolojilerle oluşturulmuş özel web siteleri",
+    "ecommerce": "E-Ticaret Çözümleri",
+    "ecommerceDesc": "Güvenli ödeme geçitleri ve envanter yönetimi ile çevrimiçi mağazalar",
+    "uiDesign": "UI/UX Tasarımı",
+    "uiDesignDesc": "Figma ile tasarlanmış güzel, sezgisel arayüzler",
+    "seo": "SEO Optimizasyonu",
+    "seoDesc": "Arama sıralamalarınızı ve çevrimiçi görünürlüğünüzü iyileştirin",
+    "mobileApp": "Mobil Uygulamalar",
+    "mobileAppDesc": "Tüm cihazlarda çalışan çapraz platform mobil uygulamalar",
+    "maintenance": "Bakım",
+    "maintenanceDesc": "Sürekli web sitesi desteği, güncellemeler ve iyileştirmeler",
+    "learnMore": "Daha Fazla",
+    "closeModal": "Kapat"
+  },
+  "serviceDetails": {
+    "webDev": {
+      "title": "Web Geliştirme",
+      "description": "React JS, HTML5 ve Tailwind CSS kullanarak özel, duyarlı web siteleri oluşturuyorum. Her site, belirli ihtiyaçlarınızı ve hedeflerinizi karşılamak için sıfırdan inşa edilir.",
+      "process": ["Gereksinim toplama", "Taslak ve tasarım", "Frontend geliştirme", "Backend entegrasyonu", "Test ve optimizasyon", "Dağıtım ve bakım"],
+      "technologies": ["React JS", "HTML5", "CSS3/Tailwind", "Node.js", "MongoDB"]
+    },
+    "ecommerce": {
+      "title": "E-Ticaret Çözümleri",
+      "description": "Güvenli ödeme işleme, envanter yönetimi ve ürünlerinizi sergilemek için kullanıcı dostu arayüzlerle eksiksiz çevrimiçi mağaza çözümleri.",
+      "process": ["Mağaza planlama", "Ürün kataloğu kurulumu", "Ödeme geçidi entegrasyonu", "Sipariş yönetim sistemi", "Güvenlik uygulaması", "Lansman ve destek"],
+      "technologies": ["Stripe/PayPal", "Envanter sistemleri", "Müşteri yönetimi", "Analitik"]
+    },
+    "uiDesign": {
+      "title": "UI/UX Tasarımı",
+      "description": "Kullanıcı göz önünde bulundurularak tasarlanmış güzel, sezgisel arayüzler. Hem görsel açıdan çekici hem de kullanımı kolay deneyimler yaratmaya odaklanıyorum.",
+      "process": ["Kullanıcı araştırması", "Taslak oluşturma", "Prototip oluşturma", "Kullanıcı testi", "Görsel tasarım", "Geliştirmeye aktarım"],
+      "technologies": ["Figma", "Adobe XD", "Sketch", "Prototip oluşturma araçları"]
+    },
+    "seo": {
+      "title": "SEO Optimizasyonu",
+      "description": "İşletmenize özel kapsamlı SEO stratejileriyle web sitenizin arama motorlarındaki görünürlüğünü artırın.",
+      "process": ["Site denetimi", "Anahtar kelime araştırması", "Sayfa optimizasyonu", "Teknik SEO", "İçerik stratejisi", "Performans izleme"],
+      "technologies": ["Google Analytics", "Search Console", "SEO araçları", "İçerik optimizasyonu"]
+    },
+    "mobileApp": {
+      "title": "Mobil Uygulamalar",
+      "description": "Tüm cihazlarda sorunsuz bir kullanıcı deneyimi sağlayan çapraz platform mobil uygulamalar.",
+      "process": ["Gereksinim tanımlama", "UI/UX tasarımı", "Geliştirme", "Test", "App store başvurusu", "Bakım"],
+      "technologies": ["React Native", "Native API'lar", "App store dağıtımı", "Çapraz platform araçları"]
+    },
+    "maintenance": {
+      "title": "Bakım",
+      "description": "Sitenizin güvenli, güncel ve optimal performans göstermesini sağlamak için sürekli web sitesi desteği.",
+      "process": ["Düzenli güncellemeler", "Güvenlik izleme", "Performans optimizasyonu", "İçerik güncellemeleri", "Teknik destek", "Özellik eklemeleri"],
+      "technologies": ["İzleme araçları", "Yedekleme sistemleri", "Güvenlik tarayıcıları", "Performans testi"]
+    }
   }
-  
+}

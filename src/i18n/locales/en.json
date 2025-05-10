@@ -1,5 +1,174 @@
 {
-    "welcome": "Welcome",
-    "description": "This is a multilingual web application."
+  "hero": {
+    "title": {
+      "part1": "Turning ",
+      "part2": "ideas",
+      "part3": "into digital realities"
+    },
+    "description": "Professional web development and design services tailored for businesses and individuals who want to stand out in the digital world.",
+    "cta_1": "View My Work",
+    "cta_2": "Contact Me",
+    "scroll": "Scroll"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "pricing": "Pricing",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Nihat Onal - Web Developer",
+    "role": "Web Developer & Designer",
+    "paragraph1": "With over 6 years of experience in web development, I specialize in creating beautiful, functional, and responsive websites that help businesses grow their online presence.",
+    "paragraph2": "My approach combines technical expertise with creative design to deliver websites that not only look great but also perform exceptionally well. I'm passionate about clean code, user experience, and helping my clients achieve their digital goals.",
+    "statistics": {
+      "experience": "Years Experience",
+      "projects": "Projects Completed",
+      "clients": "Satisfied Clients %"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I can do for you",
+    "webDev": "Web Development",
+    "webDevDesc": "Custom websites built with React JS and modern technologies",
+    "ecommerce": "E-Commerce Solutions",
+    "ecommerceDesc": "Online stores with secure payment gateways and inventory management",
+    "uiDesign": "UI/UX Design",
+    "uiDesignDesc": "Beautiful, intuitive interfaces designed with Figma",
+    "seo": "SEO Optimization",
+    "seoDesc": "Improve your search rankings and visibility online",
+    "mobileApp": "Mobile Applications",
+    "mobileAppDesc": "Cross-platform mobile apps that work on all devices",
+    "maintenance": "Maintenance",
+    "maintenanceDesc": "Ongoing website support, updates and improvements",
+    "learnMore": "Learn More",
+    "closeModal": "Close"
+  },
+  "serviceDetails": {
+    "webDev": {
+      "title": "Web Development",
+      "description": "I create custom, responsive websites using React JS, HTML5, and Tailwind CSS. Each site is built from the ground up to meet your specific needs and goals.",
+      "process": [
+        "Requirement gathering",
+        "Wireframing and design",
+        "Frontend development",
+        "Backend integration",
+        "Testing and optimization",
+        "Deployment and maintenance"
+      ],
+      "technologies": [
+        "React JS",
+        "HTML5",
+        "CSS3/Tailwind",
+        "Node.js",
+        "MongoDB"
+      ]
+    },
+    "ecommerce": {
+      "title": "E-Commerce Solutions",
+      "description": "Complete online store solutions with secure payment processing, inventory management, and user-friendly interfaces to showcase your products.",
+      "process": [
+        "Store planning",
+        "Product catalog setup",
+        "Payment gateway integration",
+        "Order management system",
+        "Security implementation",
+        "Launch and support"
+      ],
+      "technologies": [
+        "Stripe/PayPal",
+        "Inventory systems",
+        "Customer management",
+        "Analytics"
+      ]
+    },
+    "uiDesign": {
+      "title": "UI/UX Design",
+      "description": "Beautiful, intuitive interfaces designed with the user in mind. I focus on creating experiences that are both visually appealing and easy to use.",
+      "process": [
+        "User research",
+        "Wireframing",
+        "Prototyping",
+        "User testing",
+        "Visual design",
+        "Handoff to development"
+      ],
+      "technologies": [
+        "Figma",
+        "Adobe XD",
+        "Sketch",
+        "Prototyping tools"
+      ]
+    },
+    "seo": {
+      "title": "SEO Optimization",
+      "description": "Improve your website's visibility in search engines with comprehensive SEO strategies tailored to your business.",
+      "process": [
+        "Site audit",
+        "Keyword research",
+        "On-page optimization",
+        "Technical SEO",
+        "Content strategy",
+        "Performance monitoring"
+      ],
+      "technologies": [
+        "Google Analytics",
+        "Search Console",
+        "SEO tools",
+        "Content optimization"
+      ]
+    },
+    "mobileApp": {
+      "title": "Mobile Applications",
+      "description": "Cross-platform mobile applications that provide a seamless user experience across all devices.",
+      "process": [
+        "Requirements definition",
+        "UI/UX design",
+        "Development",
+        "Testing",
+        "App store submission",
+        "Maintenance"
+      ],
+      "technologies": [
+        "React Native",
+        "Native APIs",
+        "App store deployment",
+        "Cross-platform tools"
+      ]
+    },
+    "maintenance": {
+      "title": "Maintenance",
+      "description": "Ongoing website support to ensure your site remains secure, up-to-date, and performing optimally.",
+      "process": [
+        "Regular updates",
+        "Security monitoring",
+        "Performance optimization",
+        "Content updates",
+        "Technical support",
+        "Feature additions"
+      ],
+      "technologies": [
+        "Monitoring tools",
+        "Backup systems",
+        "Security scanners",
+        "Performance testing"
+      ]
+    }
+  },
+  "portfolio": {
+    "title": "My Portfolio",
+    "subtitle": "Check out my latest projects and see what I can do for you",
+    "all": "All",
+    "web-design": "Web Design",
+    "web-development": "Web Development",
+    "ui-ux": "UI/UX",
+    "web-application": "Web Application",
+    "viewProject": "View Project",
+    "projectDetails": "Project Details",
+    "viewMore": "View More"
   }
-  
+}
