@@ -263,43 +263,155 @@
     "terms": "Terms of Service",
     "cookies": "Cookie Policy"
   },
+  "projectDetail": {
+    "all": "All Projects",
+    "client": "Client",
+    "overview": "Project Overview",
+    "challenge": "The Challenge",
+    "solution": "The Solution",
+    "results": "Results",
+    "technologiesUsed": "Technologies Used",
+    "contactTitle": "Let's Discuss Your Project",
+    "contactText": "Have a similar project in mind? Let's talk about how I can help bring your ideas to life.",
+    "contactButton": "Get in Touch"
+  },
+  "privacyPolicy": {
+    "meta": {
+      "title": "Privacy Policy | BVS Design",
+      "description": "At BVS Design, we prioritize the privacy of your personal data. You can find detailed information in our privacy policy."
+    },
+    "title": "Privacy Policy",
+    "sections": [
+      {
+        "heading": "1. Introduction",
+        "text": "At BVS Design, the security of your personal data is our top priority. This policy explains what information we collect when you use our website and how we use that information."
+      },
+      {
+        "heading": "2. Information We Collect",
+        "text": "When you visit our site, certain technical data such as your IP address, browser information, and page interactions may be collected automatically. When you fill out contact forms, we may collect personal data such as your name and email address."
+      },
+      {
+        "heading": "3. Use of Data",
+        "text": "The collected data is used solely to improve our service quality, contact you, and perform statistical analysis. Your data is never shared or sold to third parties."
+      },
+      {
+        "heading": "4. Data Retention",
+        "text": "Your data is retained only for as long as necessary. Unnecessary data is periodically deleted."
+      },
+      {
+        "heading": "5. Your Rights",
+        "text": "Under applicable data protection laws, you have the right to access, correct, delete, or restrict the processing of your data. You can contact us to exercise these rights."
+      },
+      {
+        "heading": "6. Contact",
+        "text": "For questions about our privacy policy, you can contact us at hello@bvsdesign.com."
+      }
+    ]
+  },
+  "termsOfService": {
+    "meta": {
+      "title": "Terms of Service | BVS Design",
+      "description": "Please read our Terms of Service carefully before using BVS Design services."
+    },
+    "title": "Terms of Service",
+    "sections": [
+      {
+        "heading": "1. Acceptance",
+        "text": "By using the BVS Design website, you agree to these Terms of Service. If you do not agree, please do not use our website."
+      },
+      {
+        "heading": "2. Service Description",
+        "text": "BVS Design offers web design and digital solutions. The services offered may be updated or changed over time."
+      },
+      {
+        "heading": "3. User Responsibility",
+        "text": "You are responsible for using our website lawfully, accurately, and safely. Misuse of our services may result in access being restricted."
+      },
+      {
+        "heading": "4. Intellectual Property",
+        "text": "All content on this site (designs, texts, logos, etc.) belongs to BVS Design and cannot be used without permission."
+      },
+      {
+        "heading": "5. Changes",
+        "text": "These terms may be updated without prior notice. The updated terms take effect as soon as they are published on the website."
+      },
+      {
+        "heading": "6. Contact",
+        "text": "For questions about these terms, please contact us at hello@bvsdesign.com."
+      }
+    ]
+  },
+  "cookiePolicy": {
+    "meta": {
+      "title": "Cookie Policy | BVS Design",
+      "description": "Learn more about how BVS Design uses cookies to improve your experience."
+    },
+    "title": "Cookie Policy",
+    "sections": [
+      {
+        "heading": "1. What Are Cookies?",
+        "text": "Cookies are small data files stored on your browser by websites to enhance your experience."
+      },
+      {
+        "heading": "2. What Types of Cookies Do We Use?",
+        "text": "We use essential, performance, and analytics cookies to help our site function and improve."
+      },
+      {
+        "heading": "3. How Can You Control Cookies?",
+        "text": "You can accept or reject cookies via your browser settings. However, some features may not function properly."
+      },
+      {
+        "heading": "4. Third-Party Cookies",
+        "text": "We may use third-party services like Google Analytics to collect usage data via cookies."
+      },
+      {
+        "heading": "5. Changes",
+        "text": "We may update this cookie policy from time to time. The revised policy becomes effective upon publication on our site."
+      },
+      {
+        "heading": "6. Contact",
+        "text": "For questions about this policy, contact us at hello@bvsdesign.com."
+      }
+    ]
+  },
   "projects": [
     {
       "id": "1",
-      "title": "E-commerce Website Redesign",
-      "client": "Fashion Boutique",
-      "category": "ecommerce",
-      "description": "A complete redesign and development of an e-commerce platform for a fashion boutique. The project included a custom product catalog, integrated payment systems, and a user-friendly admin dashboard.",
-      "challenge": "The client's previous website was outdated and not mobile-friendly, resulting in poor conversion rates and customer engagement. They needed a modern, responsive design that would showcase their products effectively and provide a seamless shopping experience.",
-      "solution": "I developed a custom React-based e-commerce solution with a clean, modern design that adapts perfectly to all screen sizes. The new site includes advanced filtering options, a streamlined checkout process, and integration with their inventory management system.",
+      "title": "Apart Hotel Website & Admin Panel",
+      "client": "Monihomes",
+      "type": "web-design",
+      "category": "Web Design",
+      "description": "A modern one-page promotional website and a custom admin panel developed for the hotel owner. The project provides a user-friendly interface for guests while allowing the hotel owner to manage prices and occupancy easily.",
+      "challenge": "The client needed a professional yet simple page to promote their hotel. They also wanted a backend system to track the occupancy of each room using Google Calendar and collect reservation requests efficiently.",
+      "solution": "I designed a fast and elegant landing page using React. The admin panel was built with Node.js/Express, MongoDB, and JWT. Room availability is automatically synced from Google Calendar. Instead of booking directly, guests submit their info via a form, which is sent to the owner through email and WhatsApp. The admin panel also displays Google Analytics data in daily, weekly, and yearly graphs.",
       "technologies": [
         "React",
-        "Node.js",
+        "Express",
         "MongoDB",
-        "Stripe",
-        "Tailwind CSS"
+        "Tailwind CSS",
+        "Google Calendar API"
       ],
       "results": [
-        "53% increase in mobile conversions",
-        "27% reduction in cart abandonment",
-        "45% increase in average time on site"
+        "60% reduction in management time",
+        "100% of requests are captured via email and WhatsApp",
+        "Mobile-friendly design significantly improved user experience"
       ],
       "testimonial": {
-        "content": "Working with BVS Design transformed our online presence. Our customers love the new website and our sales have increased significantly since the launch.",
-        "author": "Sarah Johnson, Owner",
-        "company": "Fashion Boutique"
+        "content": "Managing the hotel became much easier with our new website and panel. I can control all the information from one place, and guest requests reach me instantly.",
+        "author": "U. Dinc, Owner",
+        "company": "Monihomes"
       },
       "images": [
-        "/placeholder.svg",
-        "/placeholder.svg",
-        "/placeholder.svg"
+        "https://d3qq3bwe0j715j.cloudfront.net/monihomes-landing.png",
+        "/images/monihomes-admin-dashboard.png",
+        "https://d3qq3bwe0j715j.cloudfront.net/monihomes-calendar-integration.png"
       ]
     },
     {
       "id": "2",
       "title": "Portfolio Website",
       "client": "Photography Studio",
-      "category": "web",
+      "type": "web",
       "description": "A portfolio website for a professional photographer showcasing their work with beautiful galleries and smooth animations.",
       "challenge": "The client needed a visually stunning website that would highlight their photography work without overshadowing the images themselves. The site needed to be fast-loading despite the high-quality images and provide an intuitive navigation experience.",
       "solution": "I created a minimalist design with a focus on the photography, implementing lazy loading and image optimization techniques to ensure fast performance. The site features subtle animations and transitions to enhance the viewing experience.",
@@ -329,7 +441,7 @@
       "id": "3",
       "title": "Mobile Application Dashboard",
       "client": "Health Tech Startup",
-      "category": "mobile",
+      "type": "ui-ux",
       "description": "A comprehensive dashboard for a health monitoring mobile application that tracks and visualizes user fitness and health data.",
       "challenge": "The client needed an intuitive dashboard that could display complex health data in an easily understandable format for users with varying levels of technical expertise. The dashboard needed to work across mobile and tablet devices with different screen sizes.",
       "solution": "I developed a responsive dashboard using React Native that presents health metrics through customizable charts and graphs. The interface adapts to different devices and provides personalized insights based on user data.",
@@ -359,7 +471,7 @@
       "id": "4",
       "title": "Corporate Website",
       "client": "Investment Firm",
-      "category": "web",
+      "type": "web",
       "description": "A professional website for an investment firm with secure client portals and interactive financial tools.",
       "challenge": "The client required a website that projected professionalism and trustworthiness while providing advanced functionality for their clients, including secure document sharing and financial calculators.",
       "solution": "I created a modern corporate website with a clean design that emphasizes reliability and expertise. The site includes secure client portals, interactive financial tools, and comprehensive information about the firm's services.",
@@ -390,7 +502,7 @@
       "id": "5",
       "title": "Restaurant Ordering System",
       "client": "Local Restaurant Chain",
-      "category": "ecommerce",
+      "type": "ecommerce",
       "description": "An online ordering system for a chain of restaurants allowing customers to place orders for pickup or delivery.",
       "challenge": "The restaurant chain needed to transition from third-party delivery apps to their own ordering system to reduce commission fees and have more control over the customer experience. The system needed to handle complex menu options and integrate with their existing POS.",
       "solution": "I developed a custom online ordering platform that seamlessly integrates with their point-of-sale system, handles complex menu customizations, and provides real-time order tracking for customers.",
@@ -421,7 +533,7 @@
       "id": "6",
       "title": "Travel Blog",
       "client": "Travel Influencer",
-      "category": "web",
+      "type": "web",
       "description": "A custom WordPress travel blog with advanced features for a popular travel influencer.",
       "challenge": "The client needed a visually appealing blog that could showcase their travel photography and writing while effectively monetizing their audience through advertisements and affiliate partnerships.",
       "solution": "I created a custom WordPress theme with optimized ad placements, affiliate link management, and stunning gallery features. The design emphasizes the client's photography while ensuring fast load times and SEO optimization.",
@@ -447,17 +559,5 @@
         "/placeholder.svg"
       ]
     }
-  ],
-  "projectDetail": {
-    "all": "All Projects",
-    "client": "Client",
-    "overview": "Project Overview",
-    "challenge": "The Challenge",
-    "solution": "The Solution",
-    "results": "Results",
-    "technologiesUsed": "Technologies Used",
-    "contactTitle": "Let's Discuss Your Project",
-    "contactText": "Have a similar project in mind? Let's talk about how I can help bring your ideas to life.",
-    "contactButton": "Get in Touch"
-  }
+  ]
 }

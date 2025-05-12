@@ -1,15 +1,34 @@
 
 import { useTranslation } from "react-i18next";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
+import { Card, CardContent } from './ui/card';
 import { motion, useInView } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import { ExternalLink } from 'lucide-react';
 export default function Portfolio() {
     const { t } = useTranslation();
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, amount: 0.1 });
 
     const [activeFilter, setActiveFilter] = useState("all");
+    const [parsedProjects, setParsedProjects] = useState([]);
+
+    const projects = useMemo(() => t("projects", { returnObjects: true }), [t]);
+
+    useEffect(() => {
+        const transformed = projects.map((item) => ({
+            id: item.id,
+            title: item.title,
+            category: item.category,
+            type: item.type, // 'type' değil 'category' olabilir senin JSON formatına göre
+            name: item.client,       // 'name' değil 'client' olarak geçiyor olabilir
+            image: item.images?.[0] || "/placeholder.svg",
+            tags: item.technologies
+        }));
+
+        setParsedProjects(transformed);
+
+    }, [projects]);
 
     const filters = [
         { id: "all", name: t("portfolio.all") },
@@ -20,61 +39,61 @@ export default function Portfolio() {
     ];
 
 
-    const projects = [
-        {
-            id: 1,
-            title: "E-commerce Website Redesign",
-            category: "web-design",
-            name: t("portfolio.web-design"),
-            image: "/placeholder.svg",
-            tags: ["React", "Tailwind", "Node.js"]
-        },
-        {
-            id: 2,
-            title: "Portfolio Website",
-            category: "web-development",
-            name: t("portfolio.web-development"),
-            image: "/placeholder.svg",
-            tags: ["React", "Framer Motion"]
-        },
-        {
-            id: 3,
-            title: "Mobile Application Dashboard",
-            category: "ui-ux",
-            name: t("portfolio.ui-ux"),
-            image: "/placeholder.svg",
-            tags: ["React Native", "Firebase"]
-        },
-        {
-            id: 4,
-            title: "Corporate Website",
-            category: "web-development",
-            name: t("portfolio.web-development"),
-            image: "/placeholder.svg",
-            tags: ["HTML", "CSS", "JavaScript"]
-        },
-        {
-            id: 5,
-            title: "Restaurant Ordering System",
-            category: "web-application",
-            name: t("portfolio.web-application"),
-            image: "/placeholder.svg",
-            tags: ["React", "MongoDB", "Express"]
-        },
-        {
-            id: 6,
-            title: "Travel Blog",
-            category: "web-design",
-            name: t("portfolio.web-design"),
-            image: "/placeholder.svg",
-            tags: ["WordPress", "Custom Theme"]
-        }
-    ];
+    // const projects_ = [
+    //     {
+    //         id: 1,
+    //         title: "E-commerce Website Redesign",
+    //         category: "web-design",
+    //         name: t("portfolio.web-design"),
+    //         image: "/placeholder.svg",
+    //         tags: ["React", "Tailwind", "Node.js"]
+    //     },
+    //     {
+    //         id: 2,
+    //         title: "Portfolio Website",
+    //         category: "web-development",
+    //         name: t("portfolio.web-development"),
+    //         image: "/placeholder.svg",
+    //         tags: ["React", "Framer Motion"]
+    //     },
+    //     {
+    //         id: 3,
+    //         title: "Mobile Application Dashboard",
+    //         category: "ui-ux",
+    //         name: t("portfolio.ui-ux"),
+    //         image: "/placeholder.svg",
+    //         tags: ["React Native", "Firebase"]
+    //     },
+    //     {
+    //         id: 4,
+    //         title: "Corporate Website",
+    //         category: "web-development",
+    //         name: t("portfolio.web-development"),
+    //         image: "/placeholder.svg",
+    //         tags: ["HTML", "CSS", "JavaScript"]
+    //     },
+    //     {
+    //         id: 5,
+    //         title: "Restaurant Ordering System",
+    //         category: "web-application",
+    //         name: t("portfolio.web-application"),
+    //         image: "/placeholder.svg",
+    //         tags: ["React", "MongoDB", "Express"]
+    //     },
+    //     {
+    //         id: 6,
+    //         title: "Travel Blog",
+    //         category: "web-design",
+    //         name: t("portfolio.web-design"),
+    //         image: "/placeholder.svg",
+    //         tags: ["WordPress", "Custom Theme"]
+    //     }
+    // ];
 
     const filteredProjects = activeFilter === "all"
-        ? projects
-        : projects.filter(project => project.category === activeFilter);
-
+        ? parsedProjects
+        : parsedProjects.filter(project => project.type === activeFilter);
+    console.log(activeFilter)
     return (
         <section id="portfolio" className="py-20 px-2 lg:px-20">
             <div className="container mx-auto px-4" ref={ref}>
@@ -125,61 +144,43 @@ export default function Portfolio() {
                     }}
                 >
                     {filteredProjects.map((project) => (
-                        <motion.div
-                            key={project.id}
-                            variants={{
-                                hidden: { opacity: 0, y: 20, scale: 0.9 },
-                                visible: {
-                                    opacity: 1,
-                                    y: 0,
-                                    scale: 1,
-                                    transition: { duration: 0.6, ease: "easeOut" }
-                                }
-                            }}
-                            className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group"
-                        >
-                            <div className="relative overflow-hidden aspect-video">
+                        <Card key={project.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                            <div className="relative overflow-hidden h-48">
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-6">
-                                    <div>
-                                        <div className="text-white font-semibold mb-2">{project.title}</div>
-                                        <div className="flex flex-wrap gap-1">
-                                            {project.tags.map((tag, i) => (
-                                                <span key={i} className="text-xs bg-white bg-opacity-30 px-2 py-1 rounded-full text-white">{tag}</span>
-                                            ))}
-                                        </div>
-                                    </div>
+                                <div className="absolute bottom-0 left-0 bg-bvs-purple text-white px-4 py-1 text-sm">
+                                    {project.category}
                                 </div>
                             </div>
-                            <div className="p-6">
-                                <h3 className="font-semibold text-lg mb-1">{project.title}</h3>
-                                <p className="text-sm text-gray-500 capitalize mb-4">{project.name}</p>
+
+                            <CardContent className="p-6 flex-grow flex flex-col">
+                                <h3 className="text-xl font-semibold mb-2 text-bvs-blue">{project.title}</h3>
+                                <p className="text-gray-700 mb-4 flex-grow">{project.description}</p>
+
+                                <div className="mb-4">
+                                    <div className="flex flex-wrap gap-2">
+                                        {project.tags.map(tech => (
+                                            <span
+                                                key={tech}
+                                                className="bg-bvs-lightPurple/10 text-bvs-purple px-3 py-1 rounded-full text-xs"
+                                            >
+                                                {tech}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+
                                 <Link
-                                    to={`/project/${project.id}`}
-                                    className="inline-flex items-center text-bvs-purple hover:underline font-medium"
+                                    to={`project/${project.id}`}
+                                    className="flex items-center text-bvs-purple hover:text-bvs-lightPurple transition-colors gap-1 text-sm mt-auto"
                                 >
-                                    {t("portfolio.viewProject")}
-                                    <svg
-                                        className="w-4 h-4 ml-1"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                            d="M9 5l7 7-7 7"
-                                        ></path>
-                                    </svg>
+                                    {t("portfolio.viewProject")} <ExternalLink size={14} />
                                 </Link>
-                            </div>
-                        </motion.div>
+                            </CardContent>
+                        </Card>
                     ))}
                 </motion.div>
 

@@ -274,5 +274,139 @@
     "contactTitle": "Projenizi Konuşalım",
     "contactText": "Benzer bir projeniz mi var? Fikirlerinizi gerçeğe dönüştürmem için konuşalım.",
     "contactButton": "İletişime Geç"
-  }
+  },
+  "privacyPolicy": {
+    "meta": {
+      "title": "Gizlilik Politikası | BVS Design",
+      "description": "BVS Design olarak kişisel verilerinizin gizliliğine önem veriyoruz. Detaylı bilgiyi gizlilik politikamızda bulabilirsiniz."
+    },
+    "title": "Gizlilik Politikası",
+    "sections": [
+      {
+        "heading": "1. Giriş",
+        "text": "BVS Design olarak, kişisel verilerinizin güvenliği bizim için en yüksek önceliktir. Bu politika, web sitemizi kullanırken topladığımız bilgileri ve bu bilgileri nasıl kullandığımızı açıklamaktadır."
+      },
+      {
+        "heading": "2. Toplanan Bilgiler",
+        "text": "Sitemizi ziyaret ettiğinizde IP adresiniz, tarayıcı bilgileriniz ve sayfa etkileşimleriniz gibi bazı teknik veriler otomatik olarak toplanabilir. İletişim formlarını doldurduğunuzda adınız, e-posta adresiniz gibi kişisel verileriniz tarafımıza iletilir."
+      },
+      {
+        "heading": "3. Verilerin Kullanımı",
+        "text": "Toplanan veriler, yalnızca hizmet kalitemizi artırmak, sizinle iletişime geçmek ve istatistiksel analizler yapmak amacıyla kullanılır. Verileriniz hiçbir şekilde üçüncü şahıslarla paylaşılmaz veya satılmaz."
+      },
+      {
+        "heading": "4. Verilerin Saklanması",
+        "text": "Verileriniz yalnızca gerekli olduğu süre boyunca saklanır. Gerekli olmayan veriler periyodik olarak silinir."
+      },
+      {
+        "heading": "5. Haklarınız",
+        "text": "KVKK kapsamında, verilerinize erişim, düzeltme, silme veya işlenmesini kısıtlama gibi haklara sahipsiniz. Bu hakları kullanmak için bizimle iletişime geçebilirsiniz."
+      },
+      {
+        "heading": "6. İletişim",
+        "text": "Gizlilik politikamız hakkında sorularınız için bizimle hello@bvsdesign.com adresinden iletişime geçebilirsiniz."
+      }
+    ]
+  },
+  "termsOfService": {
+    "meta": {
+      "title": "Hizmet Şartları | BVS Design",
+      "description": "BVS Design hizmetlerini kullanmadan önce lütfen hizmet şartlarımızı dikkatlice okuyun."
+    },
+    "title": "Hizmet Şartları",
+    "sections": [
+      {
+        "heading": "1. Kabul",
+        "text": "BVS Design web sitesini kullanarak, bu Hizmet Şartlarını kabul etmiş sayılırsınız. Bu şartları kabul etmiyorsanız, lütfen web sitemizi kullanmayınız."
+      },
+      {
+        "heading": "2. Hizmet Tanımı",
+        "text": "BVS Design, web tasarımı ve dijital çözümler sunar. Sunulan hizmetler, zamanla güncellenebilir veya değiştirilebilir."
+      },
+      {
+        "heading": "3. Kullanıcı Sorumluluğu",
+        "text": "Web sitemizi kullanırken doğru, yasal ve güvenli hareket etmekle yükümlüsünüz. Hizmetlerimizi kötüye kullanmanız halinde erişiminiz engellenebilir."
+      },
+      {
+        "heading": "4. Fikri Mülkiyet",
+        "text": "Bu sitedeki tüm içerik (tasarımlar, metinler, logolar vb.) BVS Design’a aittir ve izinsiz kullanılamaz."
+      },
+      {
+        "heading": "5. Değişiklikler",
+        "text": "Bu şartlar önceden haber verilmeden değiştirilebilir. Güncellenmiş şartlar web sitesinde yayınlandığı anda geçerli olur."
+      },
+      {
+        "heading": "6. İletişim",
+        "text": "Bu hizmet şartları hakkında sorularınız varsa hello@bvsdesign.com adresinden bizimle iletişime geçebilirsiniz."
+      }
+    ]
+  },
+  "cookiePolicy": {
+    "meta": {
+      "title": "Çerez Politikası | BVS Design",
+      "description": "Web sitemizin çerez kullanımına dair detaylı bilgiye buradan ulaşabilirsiniz."
+    },
+    "title": "Çerez Politikası",
+    "sections": [
+      {
+        "heading": "1. Çerez Nedir?",
+        "text": "Çerezler, web siteleri tarafından tarayıcınıza yerleştirilen küçük veri dosyalarıdır. Kullanıcı deneyimini geliştirmek için kullanılır."
+      },
+      {
+        "heading": "2. Hangi Tür Çerezleri Kullanıyoruz?",
+        "text": "Zorunlu, performans ve analiz çerezlerini kullanıyoruz. Bu çerezler, web sitemizin çalışmasını ve geliştirilmesini sağlar."
+      },
+      {
+        "heading": "3. Çerezleri Nasıl Kontrol Edebilirsiniz?",
+        "text": "Tarayıcı ayarlarınızdan çerezleri kabul etmeyi veya reddetmeyi seçebilirsiniz. Ancak bazı özellikler düzgün çalışmayabilir."
+      },
+      {
+        "heading": "4. Üçüncü Taraf Çerezleri",
+        "text": "Google Analytics gibi hizmetler aracılığıyla üçüncü taraf çerezleri kullanabiliriz. Bu çerezler kullanıcı davranışını analiz etmemize yardımcı olur."
+      },
+      {
+        "heading": "5. Değişiklikler",
+        "text": "Bu çerez politikası zaman zaman güncellenebilir. Güncellenmiş hali web sitemizde yayımlandığında geçerli olur."
+      },
+      {
+        "heading": "6. İletişim",
+        "text": "Çerez politikamızla ilgili sorularınız için lütfen hello@bvsdesign.com adresinden bizimle iletişime geçin."
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "1",
+      "title": "Apart Hotel Website & Admin Panel",
+      "client": "Monihomes",
+      "category": "hotel",
+      "type": "web-design",
+      "name": "Web Design",
+      "description": "A modern one-page promotional website and a custom admin panel developed for the hotel owner. The project provides a user-friendly interface for guests while allowing the hotel owner to manage prices and occupancy easily.",
+      "challenge": "The client needed a professional yet simple page to promote their hotel. They also wanted a backend system to track the occupancy of each room using Google Calendar and collect reservation requests efficiently.",
+      "solution": "I designed a fast and elegant landing page using React. The admin panel was built with Node.js/Express, MongoDB, and JWT. Room availability is automatically synced from Google Calendar. Instead of booking directly, guests submit their info via a form, which is sent to the owner through email and WhatsApp. The admin panel also displays Google Analytics data in daily, weekly, and yearly graphs.",
+      "technologies": [
+        "React",
+        "Express",
+        "MongoDB",
+        "Tailwind CSS",
+        "Google Calendar API"
+      ],
+      "results": [
+        "60% reduction in management time",
+        "100% of requests are captured via email and WhatsApp",
+        "Mobile-friendly design significantly improved user experience"
+      ],
+      "testimonial": {
+        "content": "Managing the hotel became much easier with our new website and panel. I can control all the information from one place, and guest requests reach me instantly.",
+        "author": "U. Dinc, Owner",
+        "company": "Monihomes"
+      },
+      "images": [
+        "https://d3qq3bwe0j715j.cloudfront.net/monihomes-landing.png",
+        "/images/monihomes-admin-dashboard.png",
+        "https://d3qq3bwe0j715j.cloudfront.net/monihomes-calendar-integration.png"
+      ]
+    }
+  ]
 }

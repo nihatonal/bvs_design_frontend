@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 import { useTranslation } from 'react-i18next';
 
-import codes from '../assets/images/codes.jpg'
 export default function Hero() {
     const [offsetY, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.scrollY);
@@ -37,7 +36,12 @@ export default function Hero() {
         }
     };
 
-
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
 
     return (
         <section id="home" className="relative min-h-screen flex flex-col justify-center py-4 px-2 lg:px-20 lg:py-0">
@@ -70,8 +74,12 @@ export default function Hero() {
                     </motion.p>
 
                     <motion.div variants={itemVariants} className="mt-14 lg:mt-0 grid grid-cols-2 lg:flex gap-4">
-                        <button className="bg-primary hover:bg-primary/90 py-2 px-6 text-white rounded-[8px]"> {t('hero.cta_1')}</button>
-                        <button className="btn-outline py-2 px-6 text-[#9F8CFD] border border-1 border-primary/40 hover:bg-stone-200/50 hover:text-gray-600 rounded-[8px]"> {t('hero.cta_2')}</button>
+                        <button
+                            onClick={() => scrollToSection("portfolio")}
+                            className="bg-primary hover:bg-primary/90 py-2 px-6 text-white rounded-[8px]"> {t('hero.cta_1')}</button>
+                        <button
+                            onClick={() => scrollToSection("contact")}
+                            className="btn-outline py-2 px-6 text-[#9F8CFD] border border-1 border-primary/40 hover:bg-stone-200/50 hover:text-gray-600 rounded-[8px]"> {t('hero.cta_2')}</button>
                     </motion.div>
                 </motion.div>
 
@@ -85,19 +93,15 @@ export default function Hero() {
                     <div className="relative w-full max-w-lg">
                         <div className="absolute -top-4 -left-4 w-72 h-72 bg-bvs-purple rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
                         <div className="absolute -bottom-8 right-4 w-72 h-72 bg-bvs-light-purple rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
-
-                        <div
-                            ref={codeRef}
-                            style={{ transform: `translateY(${offsetY * 0.2}px)` }}
-                            className="relative transition-transform duration-75 ease-linear"
-                        >
-                            <div className="bg-white rounded-2xl shadow-xl p-2">
-                                <div className="rounded-xl bg-gray-50 p-4 flex flex-col items-center">
-                                    <img className="rounded-xl" src={codes} alt="" />
-                                </div>
+                        <div className="bg-white rounded-2xl shadow-xl p-4">
+                            <div className="rounded-xl bg-gray-50  flex flex-col items-center
+                                overflow-hidden">
+                                <img ref={codeRef}
+                                    style={{ transform: `translateY(${offsetY * 0.2}px)` }}
+                                    className="relative transition-transform duration-75 ease-linear" src={"https://d3qq3bwe0j715j.cloudfront.net/codes.jpg"} alt="hero_codes_images" />
                             </div>
-
                         </div>
+
                     </div>
                 </motion.div>
             </div >

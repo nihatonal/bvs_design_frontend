@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 import { FaGlobe } from "react-icons/fa";
+import logo from '../assets/images/logo_bvs.png'
 export default function Header() {
     const { t, i18n } = useTranslation();
     const [isScrolled, setIsScrolled] = useState(false);
@@ -55,6 +56,7 @@ export default function Header() {
             <div className="container mx-auto px-4 flex justify-start items-center">
                 {/* Logo */}
                 <a href="#home" className="text-2xl font-bold text-bvs-dark flex items-center">
+                    <img className="w-10 mr-4" src={logo} alt="logo" />
                     <span className="text-bvs-purple">BVS</span>
                     <span className="hidden sm:inline-block ml-1">Design</span>
                 </a>

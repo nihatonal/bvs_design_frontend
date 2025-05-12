@@ -49,10 +49,14 @@ module.exports = {
           ring: 'hsl(var(--sidebar-ring))'
         },
         bvs: {
-          purple: '#8B5CF6',
-          lightPurple: '#C4B5FD',
           dark: '#1E293B',
-          light: '#F8FAFC'
+          light: '#F8FAFC',
+          blue: "#1A237E",
+          purple: "#7E69AB",
+          lightPurple: "#9b87f5",
+          accent: "#6E59A5",
+          white: "#FFFFFF",
+          gray: "#F6F6F7"
         }
       },
       borderRadius: {
