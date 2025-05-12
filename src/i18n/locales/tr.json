@@ -52,38 +52,227 @@
     "webDev": {
       "title": "Web Geliştirme",
       "description": "React JS, HTML5 ve Tailwind CSS kullanarak özel, duyarlı web siteleri oluşturuyorum. Her site, belirli ihtiyaçlarınızı ve hedeflerinizi karşılamak için sıfırdan inşa edilir.",
-      "process": ["Gereksinim toplama", "Taslak ve tasarım", "Frontend geliştirme", "Backend entegrasyonu", "Test ve optimizasyon", "Dağıtım ve bakım"],
-      "technologies": ["React JS", "HTML5", "CSS3/Tailwind", "Node.js", "MongoDB"]
+      "process": [
+        "Gereksinim toplama",
+        "Taslak ve tasarım",
+        "Frontend geliştirme",
+        "Backend entegrasyonu",
+        "Test ve optimizasyon",
+        "Dağıtım ve bakım"
+      ],
+      "technologies": [
+        "React JS",
+        "HTML5",
+        "CSS3/Tailwind",
+        "Node.js",
+        "MongoDB"
+      ]
     },
     "ecommerce": {
       "title": "E-Ticaret Çözümleri",
       "description": "Güvenli ödeme işleme, envanter yönetimi ve ürünlerinizi sergilemek için kullanıcı dostu arayüzlerle eksiksiz çevrimiçi mağaza çözümleri.",
-      "process": ["Mağaza planlama", "Ürün kataloğu kurulumu", "Ödeme geçidi entegrasyonu", "Sipariş yönetim sistemi", "Güvenlik uygulaması", "Lansman ve destek"],
-      "technologies": ["Stripe/PayPal", "Envanter sistemleri", "Müşteri yönetimi", "Analitik"]
+      "process": [
+        "Mağaza planlama",
+        "Ürün kataloğu kurulumu",
+        "Ödeme geçidi entegrasyonu",
+        "Sipariş yönetim sistemi",
+        "Güvenlik uygulaması",
+        "Lansman ve destek"
+      ],
+      "technologies": [
+        "Stripe/PayPal",
+        "Envanter sistemleri",
+        "Müşteri yönetimi",
+        "Analitik"
+      ]
     },
     "uiDesign": {
       "title": "UI/UX Tasarımı",
       "description": "Kullanıcı göz önünde bulundurularak tasarlanmış güzel, sezgisel arayüzler. Hem görsel açıdan çekici hem de kullanımı kolay deneyimler yaratmaya odaklanıyorum.",
-      "process": ["Kullanıcı araştırması", "Taslak oluşturma", "Prototip oluşturma", "Kullanıcı testi", "Görsel tasarım", "Geliştirmeye aktarım"],
-      "technologies": ["Figma", "Adobe XD", "Sketch", "Prototip oluşturma araçları"]
+      "process": [
+        "Kullanıcı araştırması",
+        "Taslak oluşturma",
+        "Prototip oluşturma",
+        "Kullanıcı testi",
+        "Görsel tasarım",
+        "Geliştirmeye aktarım"
+      ],
+      "technologies": [
+        "Figma",
+        "Adobe XD",
+        "Sketch",
+        "Prototip oluşturma araçları"
+      ]
     },
     "seo": {
       "title": "SEO Optimizasyonu",
       "description": "İşletmenize özel kapsamlı SEO stratejileriyle web sitenizin arama motorlarındaki görünürlüğünü artırın.",
-      "process": ["Site denetimi", "Anahtar kelime araştırması", "Sayfa optimizasyonu", "Teknik SEO", "İçerik stratejisi", "Performans izleme"],
-      "technologies": ["Google Analytics", "Search Console", "SEO araçları", "İçerik optimizasyonu"]
+      "process": [
+        "Site denetimi",
+        "Anahtar kelime araştırması",
+        "Sayfa optimizasyonu",
+        "Teknik SEO",
+        "İçerik stratejisi",
+        "Performans izleme"
+      ],
+      "technologies": [
+        "Google Analytics",
+        "Search Console",
+        "SEO araçları",
+        "İçerik optimizasyonu"
+      ]
     },
     "mobileApp": {
       "title": "Mobil Uygulamalar",
       "description": "Tüm cihazlarda sorunsuz bir kullanıcı deneyimi sağlayan çapraz platform mobil uygulamalar.",
-      "process": ["Gereksinim tanımlama", "UI/UX tasarımı", "Geliştirme", "Test", "App store başvurusu", "Bakım"],
-      "technologies": ["React Native", "Native API'lar", "App store dağıtımı", "Çapraz platform araçları"]
+      "process": [
+        "Gereksinim tanımlama",
+        "UI/UX tasarımı",
+        "Geliştirme",
+        "Test",
+        "App store başvurusu",
+        "Bakım"
+      ],
+      "technologies": [
+        "React Native",
+        "Native API'lar",
+        "App store dağıtımı",
+        "Çapraz platform araçları"
+      ]
     },
     "maintenance": {
       "title": "Bakım",
       "description": "Sitenizin güvenli, güncel ve optimal performans göstermesini sağlamak için sürekli web sitesi desteği.",
-      "process": ["Düzenli güncellemeler", "Güvenlik izleme", "Performans optimizasyonu", "İçerik güncellemeleri", "Teknik destek", "Özellik eklemeleri"],
-      "technologies": ["İzleme araçları", "Yedekleme sistemleri", "Güvenlik tarayıcıları", "Performans testi"]
+      "process": [
+        "Düzenli güncellemeler",
+        "Güvenlik izleme",
+        "Performans optimizasyonu",
+        "İçerik güncellemeleri",
+        "Teknik destek",
+        "Özellik eklemeleri"
+      ],
+      "technologies": [
+        "İzleme araçları",
+        "Yedekleme sistemleri",
+        "Güvenlik tarayıcıları",
+        "Performans testi"
+      ]
     }
+  },
+  "portfolio": {
+    "title": "Portfolyom",
+    "subtitle": "Son projelerime göz atın ve sizin için neler yapabileceğimi görün",
+    "all": "Tümü",
+    "web-design": "Web Tasarımı",
+    "web-development": "Web Geliştirme",
+    "ui-ux": "UI/UX",
+    "web-application": "Web Uygulaması",
+    "viewProject": "Projeyi Görüntüle",
+    "projectDetails": "Proje Detayları",
+    "viewMore": "Daha Fazla Gör"
+  },
+  "pricing": {
+    "title": "Fiyatlandırma Planları",
+    "subtitle": "İhtiyaçlarınıza uygun mükemmel planı seçin",
+    "basic": {
+      "title": "Temel",
+      "price": "₺9.500",
+      "description": "Yeni başlayan küçük işletmeler için",
+      "features": [
+        "5 sayfalık duyarlı web sitesi",
+        "Temel SEO kurulumu",
+        "İletişim formu",
+        "Mobil dostu tasarım",
+        "3 revizyon turu"
+      ],
+      "cta": "Planı Seç"
+    },
+    "pro": {
+      "title": "Profesyonel",
+      "price": "₺18.900",
+      "description": "Belirli ihtiyaçları olan büyüyen işletmeler için",
+      "features": [
+        "10 sayfalık duyarlı web sitesi",
+        "Gelişmiş SEO kurulumu",
+        "İçerik Yönetim Sistemi",
+        "E-ticaret işlevselliği",
+        "Sosyal medya entegrasyonu",
+        "5 revizyon turu"
+      ],
+      "cta": "Planı Seç"
+    },
+    "premium": {
+      "title": "Premium",
+      "price": "₺37.900",
+      "description": "Kurulu işletmeler için kapsamlı çözüm",
+      "features": [
+        "Sınırsız sayfa",
+        "Tam SEO paketi",
+        "Özel animasyonlar",
+        "Ödeme geçitli e-ticaret",
+        "Gelişmiş analitik",
+        "Sınırsız revizyon",
+        "Öncelikli destek"
+      ],
+      "cta": "Planı Seç"
+    },
+    "popular": "Popüler",
+    "custom": "Özel bir şeye mi ihtiyacınız var? Kişiselleştirilmiş bir teklif için benimle iletişime geçin."
+  },
+  "skills": {
+    "title": "Beceriler ve Uzmanlık",
+    "subtitle": "Fikirlerinizi hayata geçirmek için çalıştığım teknolojiler",
+    "frontend": "Frontend Geliştirme",
+    "backend": "Backend Geliştirme",
+    "design": "Tasarım"
+  },
+  "tech": {
+    "title": "Çalıştığım Teknolojiler"
+  },
+  "cta": {
+    "title": "Projenize Başlamaya Hazır mısınız?",
+    "subtitle": "Fikirlerinizi hayata geçirmek için benimle iletişime geçin. Birlikte harika bir şeyler yaratalım.",
+    "button": "İletişime Geçin"
+  },
+  "contact": {
+    "title": "İletişime Geç",
+    "subtitle": "Bir projen mi var? Sana nasıl yardımcı olabileceğimi konuşalım.",
+    "name": "Adınız",
+    "email": "E-posta Adresiniz",
+    "subject": "Konu",
+    "message": "Mesajınız",
+    "submit": "Mesaj Gönder",
+    "info": "İletişim Bilgileri",
+    "address": "123 İş Caddesi, 100. Ofis, Şehir",
+    "phone": "+90 (212) 345-6789",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-posta",
+    "addressLabel": "Adres",
+    "workHoursLabel": "Çalışma Saatleri",
+    "workHours": "09:00 - 18:00, Pazartesi - Cuma",
+    "letsMeet": "Bağlantıda Kalalım",
+    "letsMeetSub": "En yeni projelerimi ve güncellemelerimi görmek için beni sosyal medyada takip edin"
+  },
+  "footer": {
+    "title": "Dünyanın dört bir yanındaki işletmeler ve bireyler için etkileyici web deneyimleri oluşturuyorum.",
+    "rights": "Tüm Hakları Saklıdır",
+    "links": "Hızlı Bağlantılar",
+    "services": "Hizmetler",
+    "legal": "Yasal",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları",
+    "cookies": "Çerez Politikası"
+  },
+  "projectDetail": {
+    "all": "Tüm Projeler",
+    "client": "Müşteri",
+    "overview": "Proje Özeti",
+    "challenge": "Zorluk",
+    "solution": "Çözüm",
+    "results": "Sonuçlar",
+    "technologiesUsed": "Kullanılan Teknolojiler",
+    "contactTitle": "Projenizi Konuşalım",
+    "contactText": "Benzer bir projeniz mi var? Fikirlerinizi gerçeğe dönüştürmem için konuşalım.",
+    "contactButton": "İletişime Geç"
   }
 }

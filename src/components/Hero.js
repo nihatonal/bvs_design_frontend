@@ -1,10 +1,21 @@
 
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 import { useTranslation } from 'react-i18next';
-export default function Hero() {
 
+import codes from '../assets/images/codes.jpg'
+export default function Hero() {
+    const [offsetY, setOffsetY] = useState(0);
+    const handleScroll = () => setOffsetY(window.scrollY);
+    const codeRef = useRef(null);
     const { t } = useTranslation();
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     const containerVariants = {
         hidden: {},
         visible: {
@@ -25,6 +36,8 @@ export default function Hero() {
             }
         }
     };
+
+
 
     return (
         <section id="home" className="relative min-h-screen flex flex-col justify-center py-4 px-2 lg:px-20 lg:py-0">
@@ -56,7 +69,7 @@ export default function Hero() {
                         {t('hero.description')}
                     </motion.p>
 
-                    <motion.div variants={itemVariants} className="mt-14 lg:mt-0 grid grid-cols-2 gap-4">
+                    <motion.div variants={itemVariants} className="mt-14 lg:mt-0 grid grid-cols-2 lg:flex gap-4">
                         <button className="bg-primary hover:bg-primary/90 py-2 px-6 text-white rounded-[8px]"> {t('hero.cta_1')}</button>
                         <button className="btn-outline py-2 px-6 text-[#9F8CFD] border border-1 border-primary/40 hover:bg-stone-200/50 hover:text-gray-600 rounded-[8px]"> {t('hero.cta_2')}</button>
                     </motion.div>
@@ -73,29 +86,27 @@ export default function Hero() {
                         <div className="absolute -top-4 -left-4 w-72 h-72 bg-bvs-purple rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
                         <div className="absolute -bottom-8 right-4 w-72 h-72 bg-bvs-light-purple rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
 
-                        <div className="relative">
+                        <div
+                            ref={codeRef}
+                            style={{ transform: `translateY(${offsetY * 0.2}px)` }}
+                            className="relative transition-transform duration-75 ease-linear"
+                        >
                             <div className="bg-white rounded-2xl shadow-xl p-2">
-                                <div className="rounded-xl bg-gray-50 p-8 flex flex-col items-center">
-                                    <div className="w-16 h-2 bg-gray-200 rounded-full mb-4"></div>
-                                    <div className="w-full h-40 rounded-lg bg-gray-200 mb-4"></div>
-                                    <div className="w-full flex gap-4">
-                                        <div className="w-1/2 h-20 rounded-lg bg-gray-200"></div>
-                                        <div className="w-1/2 h-20 rounded-lg bg-gray-200"></div>
-                                    </div>
-                                    <div className="mt-6 w-full flex justify-center">
-                                        <div className="w-32 h-8 rounded-md bg-bvs-purple"></div>
-                                    </div>
+                                <div className="rounded-xl bg-gray-50 p-4 flex flex-col items-center">
+                                    <img className="rounded-xl" src={codes} alt="" />
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </motion.div>
-            </div>
+            </div >
 
             {/* Scroll indicator */}
             <motion.div
                 className="absolute bottom-16 lg:bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
-                initial={{ opacity: 0 }}
+                initial={{ opacity: 0 }
+                }
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1, duration: 1 }}
             >
@@ -113,7 +124,7 @@ export default function Hero() {
                     ></motion.div>
                 </div>
                 <span className="text-sm text-gray-400"> {t('hero.scroll')}</span>
-            </motion.div>
-        </section>
+            </motion.div >
+        </section >
     );
 }

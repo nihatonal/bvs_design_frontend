@@ -14,8 +14,8 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "pricing": "Pricing",
     "portfolio": "Portfolio",
+    "pricing": "Pricing",
     "contact": "Contact"
   },
   "about": {
@@ -170,5 +170,294 @@
     "viewProject": "View Project",
     "projectDetails": "Project Details",
     "viewMore": "View More"
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "subtitle": "Choose the perfect plan for your needs",
+    "basic": {
+      "title": "Basic",
+      "price": "$499",
+      "description": "For small businesses just getting started",
+      "features": [
+        "5-page responsive website",
+        "Basic SEO setup",
+        "Contact form",
+        "Mobile friendly design",
+        "3 rounds of revisions"
+      ],
+      "cta": "Choose Plan"
+    },
+    "pro": {
+      "title": "Professional",
+      "price": "$999",
+      "description": "For growing businesses with specific needs",
+      "features": [
+        "10-page responsive website",
+        "Advanced SEO setup",
+        "Content Management System",
+        "E-commerce functionality",
+        "Social media integration",
+        "5 rounds of revisions"
+      ],
+      "cta": "Choose Plan"
+    },
+    "premium": {
+      "title": "Premium",
+      "price": "$1999",
+      "description": "Comprehensive solution for established businesses",
+      "features": [
+        "Unlimited pages",
+        "Full SEO package",
+        "Custom animations",
+        "E-commerce with payment gateway",
+        "Advanced analytics",
+        "Unlimited revisions",
+        "Priority support"
+      ],
+      "cta": "Choose Plan"
+    },
+    "popular": "Popular",
+    "custom": "Need something custom? Contact me for a personalized quote."
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "subtitle": "Technologies I work with to bring your ideas to life",
+    "frontend": "Frontend Development",
+    "backend": "Backend Development",
+    "design": "Design"
+  },
+  "tech": {
+    "title": "Technologies I Work With"
+  },
+  "cta": {
+    "title": "Ready to Start Your Project?",
+    "subtitle": "Contact me to bring your ideas to life. Let's create something amazing together.",
+    "button": "Get in Touch"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind? Let's talk about how I can help you.",
+    "name": "Your Name",
+    "email": "Your Email",
+    "subject": "Subject",
+    "message": "Your Message",
+    "submit": "Send Message",
+    "info": "Contact Information",
+    "address": "123 Business Street, Suite 100, City",
+    "phone": "+1 (234) 567-8900",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "addressLabel": "Address",
+    "workHoursLabel": "Working Hours",
+    "workHours": "9 AM - 6 PM, Mon - Fri",
+    "letsMeet": "Let's Connect",
+    "letsMeetSub": "Follow me on social media to see my latest projects and updates"
+  },
+  "footer": {
+    "title": "Creating beautiful web experiences for businesses and individuals around the world.",
+    "rights": "All Rights Reserved",
+    "links": "Quick Links",
+    "services": "Services",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
+  },
+  "projects": [
+    {
+      "id": "1",
+      "title": "E-commerce Website Redesign",
+      "client": "Fashion Boutique",
+      "category": "ecommerce",
+      "description": "A complete redesign and development of an e-commerce platform for a fashion boutique. The project included a custom product catalog, integrated payment systems, and a user-friendly admin dashboard.",
+      "challenge": "The client's previous website was outdated and not mobile-friendly, resulting in poor conversion rates and customer engagement. They needed a modern, responsive design that would showcase their products effectively and provide a seamless shopping experience.",
+      "solution": "I developed a custom React-based e-commerce solution with a clean, modern design that adapts perfectly to all screen sizes. The new site includes advanced filtering options, a streamlined checkout process, and integration with their inventory management system.",
+      "technologies": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Stripe",
+        "Tailwind CSS"
+      ],
+      "results": [
+        "53% increase in mobile conversions",
+        "27% reduction in cart abandonment",
+        "45% increase in average time on site"
+      ],
+      "testimonial": {
+        "content": "Working with BVS Design transformed our online presence. Our customers love the new website and our sales have increased significantly since the launch.",
+        "author": "Sarah Johnson, Owner",
+        "company": "Fashion Boutique"
+      },
+      "images": [
+        "/placeholder.svg",
+        "/placeholder.svg",
+        "/placeholder.svg"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Portfolio Website",
+      "client": "Photography Studio",
+      "category": "web",
+      "description": "A portfolio website for a professional photographer showcasing their work with beautiful galleries and smooth animations.",
+      "challenge": "The client needed a visually stunning website that would highlight their photography work without overshadowing the images themselves. The site needed to be fast-loading despite the high-quality images and provide an intuitive navigation experience.",
+      "solution": "I created a minimalist design with a focus on the photography, implementing lazy loading and image optimization techniques to ensure fast performance. The site features subtle animations and transitions to enhance the viewing experience.",
+      "technologies": [
+        "React",
+        "Framer Motion",
+        "Next.js",
+        "Cloudinary"
+      ],
+      "results": [
+        "Portfolio visitors spend an average of 4+ minutes on the site",
+        "Featured on several web design inspiration platforms",
+        "Significant increase in client inquiries"
+      ],
+      "testimonial": {
+        "content": "The portfolio website exceeded my expectations. It perfectly showcases my work and has helped me attract new clients from around the world.",
+        "author": "Michael Chen",
+        "company": "Michael Chen Photography"
+      },
+      "images": [
+        "/placeholder.svg",
+        "/placeholder.svg",
+        "/placeholder.svg"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Mobile Application Dashboard",
+      "client": "Health Tech Startup",
+      "category": "mobile",
+      "description": "A comprehensive dashboard for a health monitoring mobile application that tracks and visualizes user fitness and health data.",
+      "challenge": "The client needed an intuitive dashboard that could display complex health data in an easily understandable format for users with varying levels of technical expertise. The dashboard needed to work across mobile and tablet devices with different screen sizes.",
+      "solution": "I developed a responsive dashboard using React Native that presents health metrics through customizable charts and graphs. The interface adapts to different devices and provides personalized insights based on user data.",
+      "technologies": [
+        "React Native",
+        "Firebase",
+        "D3.js",
+        "Health APIs"
+      ],
+      "results": [
+        "89% user satisfaction rating",
+        "35% increase in daily active users",
+        "Featured in App Store's health category"
+      ],
+      "testimonial": {
+        "content": "The dashboard BVS Design created for our app has been a game-changer. Users love how easily they can track their progress and understand their health data.",
+        "author": "Dr. Lisa Zhang",
+        "company": "HealthTrack Technologies"
+      },
+      "images": [
+        "/placeholder.svg",
+        "/placeholder.svg",
+        "/placeholder.svg"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Corporate Website",
+      "client": "Investment Firm",
+      "category": "web",
+      "description": "A professional website for an investment firm with secure client portals and interactive financial tools.",
+      "challenge": "The client required a website that projected professionalism and trustworthiness while providing advanced functionality for their clients, including secure document sharing and financial calculators.",
+      "solution": "I created a modern corporate website with a clean design that emphasizes reliability and expertise. The site includes secure client portals, interactive financial tools, and comprehensive information about the firm's services.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "MySQL"
+      ],
+      "results": [
+        "40% increase in lead generation",
+        "Reduced customer service calls for basic information",
+        "Improved client satisfaction with secure portal"
+      ],
+      "testimonial": {
+        "content": "Our new website perfectly represents our brand and has significantly improved how we communicate with clients. The secure portal has been particularly valuable.",
+        "author": "Robert Wilson",
+        "company": "Wilson Investment Partners"
+      },
+      "images": [
+        "/placeholder.svg",
+        "/placeholder.svg",
+        "/placeholder.svg"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Restaurant Ordering System",
+      "client": "Local Restaurant Chain",
+      "category": "ecommerce",
+      "description": "An online ordering system for a chain of restaurants allowing customers to place orders for pickup or delivery.",
+      "challenge": "The restaurant chain needed to transition from third-party delivery apps to their own ordering system to reduce commission fees and have more control over the customer experience. The system needed to handle complex menu options and integrate with their existing POS.",
+      "solution": "I developed a custom online ordering platform that seamlessly integrates with their point-of-sale system, handles complex menu customizations, and provides real-time order tracking for customers.",
+      "technologies": [
+        "React",
+        "MongoDB",
+        "Express",
+        "Stripe",
+        "Node.js"
+      ],
+      "results": [
+        "65% reduction in third-party delivery commissions",
+        "28% increase in average order value",
+        "Improved customer retention through loyalty program integration"
+      ],
+      "testimonial": {
+        "content": "The online ordering system has transformed our business. We're saving thousands on commissions while providing a better experience for our customers.",
+        "author": "Maria Garcia",
+        "company": "Taste of Home Restaurants"
+      },
+      "images": [
+        "/placeholder.svg",
+        "/placeholder.svg",
+        "/placeholder.svg"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Travel Blog",
+      "client": "Travel Influencer",
+      "category": "web",
+      "description": "A custom WordPress travel blog with advanced features for a popular travel influencer.",
+      "challenge": "The client needed a visually appealing blog that could showcase their travel photography and writing while effectively monetizing their audience through advertisements and affiliate partnerships.",
+      "solution": "I created a custom WordPress theme with optimized ad placements, affiliate link management, and stunning gallery features. The design emphasizes the client's photography while ensuring fast load times and SEO optimization.",
+      "technologies": [
+        "WordPress",
+        "PHP",
+        "Custom Theme Development",
+        "Advanced Custom Fields"
+      ],
+      "results": [
+        "215% increase in page views",
+        "42% increase in affiliate revenue",
+        "3x growth in email subscriber list"
+      ],
+      "testimonial": {
+        "content": "My new blog has completely elevated my brand. It looks professional, loads quickly, and has significantly increased my revenue from affiliate partnerships.",
+        "author": "Jessica Moore",
+        "company": "Wanderlust Adventures"
+      },
+      "images": [
+        "/placeholder.svg",
+        "/placeholder.svg",
+        "/placeholder.svg"
+      ]
+    }
+  ],
+  "projectDetail": {
+    "all": "All Projects",
+    "client": "Client",
+    "overview": "Project Overview",
+    "challenge": "The Challenge",
+    "solution": "The Solution",
+    "results": "Results",
+    "technologiesUsed": "Technologies Used",
+    "contactTitle": "Let's Discuss Your Project",
+    "contactText": "Have a similar project in mind? Let's talk about how I can help bring your ideas to life.",
+    "contactButton": "Get in Touch"
   }
 }

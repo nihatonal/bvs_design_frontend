@@ -84,24 +84,27 @@ export default function Services() {
         hidden: {},
         visible: {
             transition: {
-                staggerChildren: 0.1
+                staggerChildren: 0.15,
+                delayChildren: 0.2
             }
         }
     };
 
     const itemVariants = {
-        hidden: { y: 20, opacity: 0 },
+        hidden: { opacity: 0, scale: 0.95, rotateX: -10 },
         visible: {
-            y: 0,
             opacity: 1,
+            scale: 1,
+            rotateX: 0,
             transition: {
-                duration: 0.5
+                duration: 0.6,
+                ease: "easeOut"
             }
         }
     };
 
     return (
-        <section id="services" className="py-20">
+        <section id="services" className="py-20 px-2 lg:px-20">
             <div className="container mx-auto px-4" ref={ref}>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -123,8 +126,12 @@ export default function Services() {
                         <motion.div
                             key={service.id}
                             variants={itemVariants}
-                            whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                            className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100"
+                            whileHover={{
+                                scale: 1.03,
+                                boxShadow: "0 8px 20px rgba(0, 0, 0, 0.08)",
+                                transition: { duration: 0.3 }
+                            }}
+                            className="bg-white p-6 rounded-xl shadow-sm border border-gray-100"
                         >
                             <div className="flex items-center justify-center w-16 h-16 rounded-lg bg-bvs-purple bg-opacity-10 text-bvs-purple mb-5">
                                 {service.icon}

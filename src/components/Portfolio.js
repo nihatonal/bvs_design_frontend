@@ -76,7 +76,7 @@ export default function Portfolio() {
         : projects.filter(project => project.category === activeFilter);
 
     return (
-        <section id="portfolio" className="py-20">
+        <section id="portfolio" className="py-20 px-2 lg:px-20">
             <div className="container mx-auto px-4" ref={ref}>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

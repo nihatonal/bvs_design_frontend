@@ -1,11 +1,31 @@
 import React from 'react';
+import { useEffect } from "react";
 import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import AboutMe from '../components/AboutMe';
 import Services from '../components/Services';
-import Portfolio from '../components/Portfolio'
-function HomePage(props) {
+import Portfolio from '../components/Portfolio';
+import Pricing from '../components/Pricing';
+import Skills from '../components/Skills';
+import CTA from '../components/CTA';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+function HomePage() {
+
+
+    useEffect(() => {
+        const scrollToId = sessionStorage.getItem('scrollTo');
+        if (scrollToId) {
+            const section = document.getElementById(scrollToId);
+            if (section) {
+                setTimeout(() => {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                    sessionStorage.removeItem('scrollTo');
+                }, 300); // Gerekirse biraz beklet
+            }
+        }
+    }, []);
     return (
         <div>
             <Helmet>
@@ -32,6 +52,11 @@ function HomePage(props) {
             <AboutMe />
             <Services />
             <Portfolio />
+            <Pricing />
+            <CTA />
+            <Skills />
+            <Contact />
+            <Footer />
         </div>
     );
 }

@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 import { FaGlobe } from "react-icons/fa";
 export default function Header() {
@@ -12,18 +13,26 @@ export default function Header() {
         { id: "home", label: t("nav.home") },
         { id: "about", label: t("nav.about") },
         { id: "services", label: t("nav.services") },
-        { id: "pricing", label: t("nav.pricing") },
         { id: "portfolio", label: t("nav.portfolio") },
+        { id: "pricing", label: t("nav.pricing") },
         { id: "contact", label: t("nav.contact") },
     ];
 
-    const scrollToSection = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            window.scrollTo({
-                top: element.offsetTop - 70, // Header yüksekliğini hesaba kat
-                behavior: "smooth",
-            });
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const handleMenuClick = (id) => {
+        if (location.pathname === '/') {
+            // Ana sayfadaysa doğrudan scroll yap
+            const section = document.getElementById(id);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            // Başka bir sayfadaysa önce anasayfaya yönlendir, sonra scroll yap
+            navigate('/', { replace: false });
+            // Kısa bir bekleme ile scroll yapılacak section ID’yi kaydet
+            sessionStorage.setItem('scrollTo', id);
         }
     };
     // Handle scroll effect
@@ -55,7 +64,7 @@ export default function Header() {
                     {navItems.map((item) => (
                         <button
                             key={item.id}
-                            onClick={() => scrollToSection(item.id)}
+                            onClick={() => handleMenuClick(item.id)}
                             className="font-medium text-gray-700 hover:text-bvs-purple transition-colors"
                         >
                             {item.label}
@@ -144,12 +153,14 @@ export default function Header() {
                     >
                         <div className="container mx-auto py-4 px-4 flex flex-col space-y-4">
                             {navItems.map((item) => (
-
                                 <button
                                     key={item.id}
                                     onClick={() => {
-                                        scrollToSection(item.id)
-                                        setIsMobileMenuOpen(false)
+                                        // scrollToSection(item.id);
+                                        setIsMobileMenuOpen(false); // Menü kapanması
+                                        setTimeout(() => {
+                                            handleMenuClick(item.id); // Sonra kaydırma işlemini yap
+                                        }, 200); // Kapanma animasyonunun bitmesi için kısa bir gecikme ekle
                                     }}
                                     className="font-medium text-gray-700 hover:text-bvs-purple transition-colors py-2"
                                 >
